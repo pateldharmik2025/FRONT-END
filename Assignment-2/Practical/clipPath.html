@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    text-decoration: none;
+    
+
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding:0;
+display: flex;
+}
+
+
+
+.Main {
+    height: 600px;
+    width: 100%;
+    background: url(images/img11.jpeg);
+    background-size: cover;
+    font-size: 30px;
+    font-weight: 600;
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 49% 98%, 0 80%);
+    filter: brightness(0.7);
+    color: white;
+    padding: 20px ;
+    align-self: center;
+
+}
+
+.Main .navbar {
+   display:flex;
+   gap: 100px;
+}
+.Main .navbar .left-nav{
+    padding-left: 250px;
+}
+.Main .navbar .left-nav h3 {
+    border: 3px solid white;
+    text-align: center;       
+}
+.Main .navbar .left-nav h3 .L{
+ padding:0px 10px;
+ border: 3px solid white;
+ background-color: white;
+ color:rgba(0, 0, 0, 0.366);
+}
+.Main .navbar .right-nav ul{
+    padding-left: 100px;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+
+}
+.Main .navbar .right-nav ul li  .red{
+    color: rgb(182, 91, 45);
+}
+.Main .navbar .right-nav ul li a{
+    color: white;
+}
+.Main .middle-part{
+    padding-top: 80px;
+    text-align: center;
+}
+.Main .middle-part h4{
+    font-size: 25px;
+    padding-bottom: 20px;    
+}
+.Main .middle-part h1{
+    font-size: 65px;
+    padding-bottom: 10px;
+    /* position: relative;  */
+}
+.Main .b-f{
+    position: relative;
+}
+.Main .b-f::after{
+    content: "";
+    width: 121px;
+    height: 3px;
+    background-color: bisque;
+    position: absolute;
+    margin-top: 13px;
+
+}
+.Main .b-f::before{
+   
+    margin-left: -124px;
+    content: "";
+    margin-top: 14px;
+    width: 121px;
+    height: 3px;
+    background-color: bisque;
+    position: absolute;
+    
+
+
+}
+
+
+.Main .middle-part p{
+    font-size: 16px;
+    margin: auto;
+    width: 600px;
+    color: rgb(130, 196, 226);
+    padding-bottom: 50px;
+}
+.Main .middle-part .btns .btn1 {
+    background-color:orangered;
+    font-weight: 500;
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: white;
+}
+.Main .middle-part .btns .btn2{
+    font-weight: 500;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border:2px solid white;
+    background-color: transparent;
+    
+}
+ 
+ .anchor {
+    padding: 20px;
+    margin: auto;
+    font-size: 30px;
+    color: brown;
+    background-color:whitesmoke;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    box-shadow: 0px 0px 10px white;
+    transform: translateY(-55px );
+}
+.last-line{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.last-line .f-1 .icon {
+    height: 45px;
+    width: 45px;
+    padding: 15px;
+    font-size: 30px;
+    border: 3px solid orangered;
+    color:orangered;
+    text-align: center;
+    transform: rotate(138deg);
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.last-line .f-1 .icon i{
+ transform: rotate(220deg);
+}
+.last-line .f-1 h3{
+ margin-left: 45px;
+ color:orangered;
+}
+.last-line .f-1 h3::before{
+    content:"";
+    height: 5px;
+    width: 50px;
+    margin:40px;
+    background-color: orangered;
+    position: absolute;
+}
+.last-line .f-1 p{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-bottom:120px;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+ 
+.last-line .f-2 .icon2 {
+    height: 45px;
+    width: 45px;
+    padding: 15px;
+    font-size: 30px;
+    border: 2px solid orangered;
+    color:orangered;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 20px;   
+}
+
+.last-line .f-2 h3{
+ margin-left: 45px;
+ color:black;
+}
+.last-line .f-2 h3::before{
+    content:"";
+    height: 5px;
+    width: 50px;
+    margin:40px;
+    background-color: orangered;
+    position: absolute;
+}
+.last-line .f-2 p{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;    
+}
+.last-line .f-3 .icon3 {
+    height: 45px;
+    width: 45px;
+    padding: 15px;
+    font-size: 30px;
+    border: 2px solid orangered;
+    color:orangered;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 20px;   
+}
+
+.last-line .f-3 h3{
+ margin-left: 45px;
+ color:black;
+}
+.last-line .f-3 h3::before{
+    content:"";
+    height: 5px;
+    width: 50px;
+    margin:40px;
+    background-color:orangered;
+    position: absolute;
+}
+.last-line .f-3 p{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;    
+}
+.last-line .f-4 .icon4 {
+    height: 45px;
+    width: 45px;
+    padding: 15px;
+    font-size: 30px;
+    border: 2px solid orangered;
+    color:orangered;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 20px;   
+}
+
+.last-line .f-4 h3{
+ margin-left: 45px;
+ color:black;
+}
+.last-line .f-4 h3::before{
+    content:"";
+    height: 5px;
+    width: 50px;
+    margin:40px;
+    background-color:orangered;
+    position: absolute;
+}
+.last-line .f-4 p{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;    
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="Main">
+            <div class="margin-padding">
+                <div class="navbar">
+                    <div class="left-nav">
+                        <h3><span class="L">L</span>ogo</h3>
+                    </div>
+                    <div class="right-nav">
+                        <ul>
+                            <li><a class="red" href="">HOME</a></li>
+                            <li><a href="">ABOUT US </a> </li>
+                            <li><a href="">PORTFOLIO</a></li>
+                            <li> <a href="">PRICING</a></li>
+                            <li> <a href="">TEAM</a></li>
+                            <li> <a href="">BLOG</a></li>
+                            <li> <a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-part">
+                <h4>Our Clients are Our First Priority</h4>
+                <h1>WELCOME TO SKY</h1>
+                <div class="b-f">*</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae saepe sit placeat ipsa deleniti earum,
+                    tempora aut aliquid, commodi doloremque tenetur quia nostrum voluptatum dolor eligendi adipisci
+                    libero impedit maiores.</p>
+                <div class="btns">
+                    <button class="btn1">GET STARTED NOW</button>
+                    <button class="btn2"> LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="anchor">
+            <i class="fa-solid fa-anchor"></i>
+        </div>
+        <div class="last-line">
+            <div class="f-1">
+                <div class="icon">
+                    <i class="fa-solid fa-glasses"></i>
+                </div>
+                <h3>SLEEK DESIGN</h3>
+                <div class="bf"></div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sint vero maxime exercitationem.
+                </P>
+            </div>
+            <div class="f-2">
+                <div class="icon2">
+                    <i class="fa-sharp fa-regular fa-heart"></i>
+                </div>
+                <h3>CLEAN CODE</h3>
+                <div class="bf2"></div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sint vero maxime exercitationem.
+                </P>
+            </div>
+            <div class="f-3">
+                <div class="icon3">
+                    <i class=" fa-regular fa-lightbulb"></i>
+                </div>
+                <h3>CREATIVE IDEAS</h3>
+                <div class="bf3"></div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sint vero maxime exercitationem.
+                </P>
+            </div>
+            <div class="f-4">
+                <div class="icon4">
+                    <i class="fa-sharp fa-regular fa-message"></i>
+                </div>
+                <h3>FREE SUPPORT</h3>
+                <div class="bf4"></div>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sint vero maxime exercitationem.
+                </P>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section{
+      
+    display: flex;
+  align-items: center;
+  position: relative;
+}
+section .section1{
+   height: 651px;
+   width:100%;
+    flex: 1;
+    text-align: right;
+    display: grid;
+    padding: 0px 45px;
+    color: white;
+   background-color:black;
+}
+section .section1 .left-side{
+    display: grid;
+    gap: 70px;
+}
+section .section1 .left-side h2{
+   padding-top: 60PX;
+   font-size: 30px;
+   font-weight: 500;
+   letter-spacing: 2px;
+}
+
+section .section1 .left-side h2::after{
+    content: "";
+    height:5px;
+    width: 4px;
+    margin-left:20px;
+    position: absolute;
+    background-color: red;
+    padding-top:30px ;
+}
+section .section1 .left-side .info{
+    display: grid;
+    gap: 20px;
+    
+}
+section .section1 .left-side .info h3{
+    color: orangered;
+}
+section .section1 .left-side .info p{
+    color: grey;
+}
+
+.middle-part{
+    position: absolute;
+    margin-left:49%;
+    color: white;
+    top: 0;
+    padding-top:190px;
+    padding-left: 27px;
+    display: grid;
+    gap: 70px;
+}
+.middle-part .div{
+    font-size: 35px;                          
+    padding: 10px;
+    border: 5px solid white;
+    color: orangered;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 50%;
+    text-align: center;
+}
+section .section2{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    
+}
+
+section .section2 .image img{
+    height: 652px;
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="section1">
+            <div class="margin-padding">
+                <div class="left-side">
+                    <h2>OUR SERVICES</h2>
+                    <div class="info">
+                        <h3>WEB DESIGN</h3>
+                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, vero animi dolorem qui
+                            <br>
+                            molestiae consequatur minima beatae doloremque molestias.</P>
+                    </div>
+                    <div class="info">
+                        <h3>PRINT DESIGN</h3>
+                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, vero animi dolorem qui
+                            <br>
+                            molestiae consequatur minima beatae doloremque molestias.</P>
+                    </div>
+                    <div class="info">
+                        <h3>PHOTOGRAPHY</h3>
+                        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, vero animi dolorem qui
+                            molestiae consequatur minima beatae doloremque molestias ratione autem accusantium.</P>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section2">
+            <div class="image">
+                <img src="images/img11.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="middle-part">
+        <div class="div">
+            <i class="fa-solid fa-regular fa-display"></i>
+        </div>
+        <div class="div">
+            <i class="fa-solid fa-regular fa-layer-group"></i>
+        </div>
+        <div class="div">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>

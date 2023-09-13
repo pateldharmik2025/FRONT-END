@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main .navbar {
+    height: 100px;
+    width: 100%;
+    /* background-color:lavenderblush; */
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+    column-gap: 545px;
+}
+
+.main .navbar .left-side h1 {
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+.main .navbar .right-side ul {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    list-style: none;
+    letter-spacing: 1px;
+
+}
+
+.main .navbar .right-side ul button {
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+    color: blue;
+    background-color: rgba(44, 44, 175, 0.282);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.m-section {
+    text-align: center;
+}
+
+.m-section .button2 {
+    margin-top: 100px;
+    height: 35px;
+    width: 200px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    color: black;
+    background-color: rgba(166, 166, 120, 0.773);
+}
+
+.m-section h1 {
+    font-size: 60px;
+}
+
+.m-section p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 500px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.m-section input {
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+.button3 {
+    height: 45px;
+    width: 300px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: rgb(94, 94, 213);
+    color: white;
+
+}
+
+.m-img img {
+    width: 100%;
+}
+
+.m-img h3 {
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.last-line ul {
+    height: 150px;
+    width: 100px;
+    margin-left: 170px;
+    display: flex;
+    gap: 150px;
+}
+
+.last-line ul img {
+    margin-top: 45px;
+    height: 150px;
+    width: 180px;
+}
+
+.last-img img {
+    margin-top: 145px;
+    width: 90%;
+}
+
+@media (max-width:576px) {
+    .right-side {
+        display: none;
+
+    }
+
+    .m-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .m-img h3 {
+        row-gap: 10px;
+        width: 500px;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .last-line ul {
+        display: grid;
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-bottom: 50px; */
+    }
+
+    .last-line ul img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 100px;
+    }
+}
+
+   @media (min-width:576px) {
+    .right-side {
+        display: none;
+
+    }
+
+    .m-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .m-img h3 {
+        row-gap: 10px;
+        width: 500px;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .last-line ul {
+        display: flex;
+        
+        margin-left: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-bottom: 50px; */
+    }
+
+    .last-line ul img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 100px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="main">
+            <div class="navbar">
+                <div class="left-side">
+                    <h1>team.flow</h1>
+                </div>
+                <div class="right-side">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">File</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Log In</a></li>
+                        <li><button>Enter Your Name </button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-section">
+                <button class="button2">
+                    Get account of $59<i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <h1>Manage the team <br> everyone wants to be on</h1>
+                <p>Simple platform that lets you maste ipsum dolor sit amet consectetur adipisicing elit. A dolore quam
+                    voluptates, odit hic sit veritatis. quibusdam voluptas sunt ea odio dolores ratione earum blanditiis
+                    exercitationem possimus. </p>
+
+                <input type="text" name="" id="" placeholder="name@yourcompny.com">
+                <div class="bt">
+                    <button class="button3">try it free</button>
+                </div>
+
+            </div>
+            <div class="m-img">
+
+                <img src="images/img21.jpg" alt="">
+                <h3>TRUSTED BY OVER 10.000+ WORLD'S BEST TEAMS</h3>
+
+            </div>
+            <div class="last-line">
+                <ul>
+                    <li><img src="images/google.jpg" alt=""></li>
+                    <li><img src="images/air.jpg" alt=""></li>
+                    <li><img src="images/face.jpg" alt=""></li>
+                    <li><img src="images/hubspot.webp" alt=""></li> 
+                </ul>
+               <div class="last-img">
+                <img src="images/ddpp.jpg" alt="">
+               </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.main{  
+    height: auto;
+    max-width:100%;
+    background-color:rgb(57, 56, 56);
+}
+.main .container-large .gridbox{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(4,1fr);    
+}
+
+.gridbox .sub img{
+    height: 100%;
+    max-width: 100%;
+    gap:20px;
+}
+.gridbox .sub1{
+    height: auto;
+     grid-column:1/span 3;
+}
+.gridbox .sub4{
+    height: auto;
+     grid-column:2/span 2;
+}
+.gridbox .sub6{
+    height: auto;
+     grid-column:1/span 2;
+}
+.gridbox .sub7{
+    height: auto;
+    grid-column:3/span 2;
+}
+img{
+    height: 250px;
+    width: 100%;
+}
+@media (max-width:576) {
+    .gridbox .sub{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (min-width:576) {
+    .gridbox .sub{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+   
+ <section class="main">
+  <div class="container-large">
+    <div class="gridbox">
+      <div class="sub1">
+        <img src="images/img1.jpeg" alt="">
+   </div>
+   <div class="sub">
+       <img src="images/img2.jpeg" alt="">
+  </div>
+  <div class="sub">
+   <img src="images/img3.jpeg" alt="">
+  </div>
+  <div class="sub4">
+   <img src="images/img4.jpeg" alt="">
+  </div>
+  <div class="sub">
+   <img src="images/img5.jpeg" alt="">
+  </div>
+  <div class="sub6">
+   <img src="images/img6.jpeg" alt="">
+  </div>
+  <div class="sub7">
+   <img src="images/img7.jpeg" alt="">
+  </div>
+  <div class="sub">
+   <img src="images/img8.jpeg" alt="">
+  </div>
+  <div class="sub">
+    <img src="images/img9.jpeg" alt="">
+   </div>
+   <div class="sub">
+    <img src="images/img11.jpeg" alt="">
+   </div>
+   <div class="sub">
+    <img src="images/img10.jpeg" alt="">
+   </div>
+ 
+ 
+    </div>
+  </div>
+
+ </section>
+s
+</body>
+</html>

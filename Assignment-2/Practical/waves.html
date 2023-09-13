@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        section{
+            position: relative;
+            z-index: 0;
+        }
+        .main .bg-img img{
+            height: 655px;
+            width: 100%;
+            filter: brightness(0.4);
+        }
+        section .main .on-content{
+            position: absolute;
+            top: 55px;
+            left: 500px;
+            text-align: center;
+            color: white;
+            display: grid;
+            gap: 40px;
+        }
+        section .main .on-content h3{
+            font-size: 35px;
+        }
+        section .main .on-content p{
+            font-size: 18px;
+            letter-spacing: 1px;
+           
+        }
+        .div1{
+            position: absolute;
+            bottom: -10px;
+        }
+        .div2{
+            margin-top: 0px;
+            position: absolute;
+            top: 530px;
+            left: 345px;
+            color: orangered;
+            
+        }
+        .div2 p{
+            color: white;
+        }
+        .img-sec{
+            position: absolute;
+            top: 50%;
+            gap: 20px;
+        }
+        .img-sec img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0px 0px 5px white;
+
+
+        }
+
+        .img1{
+            margin-left: 155px;
+            margin-top: 130px;
+            
+        }
+        .img2{
+            margin-left: 155px;
+            margin-bottom: 60px;
+        }
+        .img3{
+            margin-left: 155px;
+            margin-top: -80px;
+            margin-bottom: 160px;
+        }
+        .img4{
+            margin-left: 155px;
+            margin-top: -200px;
+            margin-bottom: 220px;
+        }
+        .img5{
+            margin-left: 135px;
+            margin-top: -180px;
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="bg-img">
+                <img src="images/waves.jpeg" alt="">
+           </div>
+           <div class="on-content">
+            <h3>OUR TEAM</h3>
+            <p>
+                Meet the craziest team. Share your thoughts with them.
+            </p>
+            <div class="bf-af">*</div>
+
+           </div>
+        </div>
+    </section>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="div1">
+        <path class="pl" d="M-5.07,73.52 C149.99,150.00 299.66,-102.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: rgb(149, 41, 41); fill:rgba(196, 11, 11, 0.252)"></path>
+    </svg>
+    <div class="img-sec">
+        <img src="images/girl1.jpeg" alt="" class="img1">
+    
+        <img src="images/girl2.jpeg" alt="" class="img2">
+    
+        <img src="images/people1.jpeg" alt="" class="img3">
+    
+        <img src="images/people2.jpeg" alt="" class="img4">
+    
+        <img src="images/people3.jpeg" alt="" class="img5">
+    </div>
+    
+<div class="div2">
+    <h1>WEB DESIGNER</h1>
+    <p>
+        UI/UX Designer
+    </p>
+</div>
+</body>
+</html>

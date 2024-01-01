@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slider By Jquery (N.V)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    #slider-container {
+      height: 50%;
+      /* width: 50%; */
+      width: 500px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    #slider {
+      width: 500px;
+      display: flex;
+      gap: 5px;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide{
+      width: 500px;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+
+      /* background-color: rgba(127, 255, 212, 0.811);   */
+    }
+    .slide img {
+      height: 500px;
+      width: 479px;
+      max-width: 479px;
+      margin: auto;
+    }
+
+    .btns {
+      transition: 1s ease;
+      height: 50px;
+      width: 0%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(180, 148, 210);
+
+     
+
+    }
+  
+
+    .btns button{
+      height: 50px;
+      width: 70px;
+      border: none;
+      background-color: rgb(208, 182, 182);
+      font-size: 20px;
+    }
+    button:hover{
+      color: white;
+      background-color: rgb(59, 58, 58);
+
+    }
+   
+  </style>
+</head>
+
+<body>
+
+  <div id="slider-container">
+    <div id="slider">
+      <div class="slide"><img
+          src="images/pic1.jpg" alt="">Slide
+        1</div>
+      <div class="slide"><img src="images/pic2.jpeg"
+          alt="">Slide 2</div>
+      <div class="slide"><img
+          src="images/pic3.jpg"
+          alt="">Slide 3</div>
+      <div class="slide"><img
+          src="images/pic4.webp"
+          alt="">Slide 4</div>
+      <div class="slide"><img src="images/pic5.jpeg"
+          alt="">Slide 5</div>
+
+
+    </div>
+  </div>
+  <div class="btns">
+    <button id="prevBtn"><span class="fa-solid fa-chevron-left"></span></button>
+    <button id="nextBtn"><span class="fa-solid fa-chevron-right"></span></button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      document.querySelector('.btns').style.width = '500px  '
+      var currentIndex = 0;
+      // var slideWidth = $('.slide').outerWidth();
+      var slideWidth = 504;
+      var totalSlides = $('.slide').length;
+      //var container = $('.slide').add(length);
+
+      $('#nextBtn').click(function () {
+        currentIndex++
+        if (currentIndex == totalSlides) {
+          currentIndex = 0;
+        }
+        updateSlider();
+      });
+
+      $('#prevBtn').click(function () {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = totalSlides - 1;
+        }
+        updateSlider();
+      });
+
+      function updateSlider() {
+        var newPosition = -currentIndex * slideWidth;
+        $('#slider').css('transform', 'translateX(' + newPosition + 'px)');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

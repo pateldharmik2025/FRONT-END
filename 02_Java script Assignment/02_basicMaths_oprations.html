@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            height: 300px;
+            width: 400px;
+            text-align: center;
+            padding: 30px;
+            margin: 50px auto;
+            border: 4px solid black;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+
+        }
+
+        .flex .btns button {
+            margin-top: 20px;
+            height: 40px;
+            width: 40px;
+            font-weight: 500;
+
+        }
+
+        #ans1{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h2>Maths Oprations </h2>
+        <label for="">Enter 1st Number :</label>
+        <input type="text" name="" id="lbl1">
+        <br><br>
+        <label for="">Enter 2nd Number :</label>
+        <input type="text" name="" id="lbl2">
+        <div class="flex">
+            <div class="btns">
+                <button onclick=" return addtion()">+</button>
+                <button onclick=" return substraction()">-</button>
+                <button onclick=" return Multiplication()" >*</button>
+                <br>
+                <button onclick="return Divison()">/</button>
+                <button onclick="return Modules()">%</button>
+            </div>
+            <div class="answer">
+                <span>Answer is :</span><span id="ans1"></span>
+            </div>
+        </div>
+    </form>
+    <script>
+
+        function addtion() {
+            let one = document.getElementById("lbl1").value
+            let two = document.getElementById("lbl2").value
+            let final = Number(one) + Number(two)
+            document.getElementById("ans1").innerHTML = final
+            return false
+        }
+        function substraction() {
+            let one = document.getElementById("lbl1").value
+            let two = document.getElementById("lbl2").value
+            let final = Number(one) - Number(two)
+            document.getElementById("ans1").innerHTML = final
+            return false
+        }
+        function Multiplication() {
+            let one = document.getElementById("lbl1").value
+            let two = document.getElementById("lbl2").value
+            let final = Number(one) * Number(two)
+            document.getElementById("ans1").innerHTML = final
+            return false
+        }
+        function Divison() {
+            let one = document.getElementById("lbl1").value
+            let two = document.getElementById("lbl2").value
+            let final = Number(one) / Number(two)
+            document.getElementById("ans1").innerHTML = final
+            return false
+        }
+        function Modules() {
+            let one = document.getElementById("lbl1").value
+            let two = document.getElementById("lbl2").value
+            let final = Number(one) % Number(two)
+            document.getElementById("ans1").innerHTML = final
+            return false
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Animation Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    .highlight {
+        font-size: 20px;
+        color:blue;
+       font-weight: bold;
+    }
+    p{
+        font-size: 20px;
+    }
+    button{
+        height: 35px;
+        background-color: rgb(61, 139, 163);
+        border: transparent;
+        border-radius: 10%;
+
+
+    }
+  </style>
+</head>
+<body>
+
+  <p id="myParagraph">This is a paragraph.</p>
+  <button id="animateButton">Add Animate</button>
+  <button id="remove">Remove Animate</button>
+
+  <script>
+    $(document).ready(function() {
+      $('#animateButton').click(function() {
+        $('#myParagraph').addClass('highlight', 1000, 'ease all', ).delay(2000).queue(function(next) {
+         next();
+        });
+      });
+      $('#remove').click(function(){
+        debugger
+        $('#myParagraph').removeClass('highlight');
+    }); 
+    });
+
+  </script>
+
+</body>
+</html>

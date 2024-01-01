@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(111, 210, 235);
+        }
+
+
+        form {
+            height: 1000px;
+            width: 70%;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 10px
+        }
+
+        input {
+            height: 25px;
+            width: 500px;
+            padding-left: 5px;
+            font-size: 15px;
+        }
+
+        .row .col2 {
+
+            display: flex;
+            padding-left: 20px;
+            width: 20%;
+        }
+
+        .row .col2 input {
+            height: 14px;
+            width: 30%;
+
+
+        }
+
+        .row2 {
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 10px;
+
+        }
+
+        .col5 {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .col5 input {
+
+            width: fit-content;
+
+
+        }
+
+        .inputclass {
+            display: flex;
+            align-items: center;
+        }
+
+        .error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <!-- fname  -->
+        <div class="row">
+            <div class="col">
+                <label for="fname" htmlFor="Firstname">First Name :</label>
+            </div>
+            <div class="col">
+                <input type="text" name="firstname" id="fname" placeholder=" Enter First Name" onblur="" onkeyup="">
+
+            </div>
+        </div>
+        <!-- lname -->
+        <div class="row">
+            <div class="col">
+                <label for="">Last Name :</label>
+            </div>
+            <div class="col">
+                <input type="text" name="lastname" id="lname" placeholder=" Enter Last Name" onblur="" onkeyup="">
+            </div>
+        </div>
+        <!-- email  -->
+        <div class="row">
+            <div class="col">
+                <label for="">Email Id :</label>
+            </div>
+            <div class="col">
+                <input type="text" name="mail" id="email" placeholder="it should contain @... " onblur="" onkeyup="">
+            </div>
+        </div>
+        <!-- mobile number -->
+        <div class="row">
+            <div class="col">
+                <label for="">Mobile No :</label>
+            </div>
+            <div class="col">
+                <input type="text" name="mno" id="mno" placeholder="Only 10 digits are allowed" maxlength="10" onblur=""
+                    onkeyup="">
+            </div>
+        </div>
+        <!-- gender -->
+        <div class="row">
+            <div class="col">
+                <label for="">Gender :</label>
+            </div>
+            <div class="col2">
+                Male<input type="radio" name="rbtn" id="male" onblur="" onkeyup="">
+                Female<input type="radio" name="rbtn" id="female" onblur="" onkeyup="">
+
+            </div>
+        </div>
+        <!-- DOB -->
+        <div class="row">
+            <div class="col">
+                <label for="">Date Of Birth :</label>
+            </div>
+            <div class="col3">
+                <input type="date" name="b-date" id="dob">
+            </div>
+        </div>
+        <!-- Add  -->
+        <div class="row">
+            <div class="col">
+                <label for="">Address :</label>
+            </div>
+            <div class="col3">
+                <textarea name="" id="add" cols="66" rows="9"></textarea>
+            </div>
+        </div>
+        <!-- city -->
+        <div class="row">
+            <div class="col">
+                <label for=""> City :</label>
+            </div>
+            <div class="col3">
+                <input type="text" name="" id="city1">
+            </div>
+        </div>
+        <!-- Pincode -->
+        <div class="row">
+            <div class="col">
+                <label for="">Area PIN :</label>
+            </div>
+            <div class="col3">
+                <input type="text" name="" id="pin1" maxlength="6" placeholder="">
+            </div>
+        </div>
+        <!-- State -->
+        <div class="row">
+            <div class="col">
+                <label for="">State :</label>
+            </div>
+            <div class="col3">
+                <input type="text" name="" id="State">
+            </div>
+        </div>
+        <!-- Qualification -->
+        <div class="row">
+            <div class="col">
+                <label for=""> Qualification :</label>
+            </div>
+            <div class="dropdown">
+                <select name="" id="qualify">
+                    <option value="">---Qualification---</option>
+                    <option value="1"> B.E </option>
+                    <option value="2"> BCA </option>
+                    <option value="3"> Other Technical Qualification </option>
+                </select>
+
+            </div>
+        </div>
+        <!--Specialization  -->
+        <div class="row2">
+            <div class="col">
+                <label for=""> Spacialization :</label>
+            </div>
+            <div class="col5" id="special">
+                <div class="inputclass">
+                    <input type="checkbox" name="" id="">
+                    <p>Computer Sceince</p>
+                </div>
+                <div class="inputclass">
+                    <input type="checkbox" name="" id="">
+                    <p>Information Sceince</p>
+                </div>
+                <div class="inputclass">
+
+                    <input type="checkbox" name="" id="">
+                    <p>Computer Architecture</p>
+                </div>
+                <div class="inputclass">
+
+                    <input type="checkbox" name="" id="">
+                    <p>Tele Communication</p>
+                </div>
+            </div>
+        </div>
+        <!--password-->
+        <div class="row">
+            <div class="col">
+                <label for="pass">Password:</label>
+            </div>
+            <div class="col">
+                <input type="password" name="" id="pass">
+            </div>
+        </div>
+
+        <!-- button -->
+        <div class="row">
+            <div class="col-1">
+                <button
+                    style="color: white;border: none; border-radius: 7%; background-color: rgba(106, 175, 28, 0.925);height: 30px;width: 100px;"
+                    onclick=" return validateForm()">Registered</button>
+            </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function validateForm() {
+            // Reset previous error messages
+            $('.error').remove();
+
+            // Get form values
+            var fname = $('#fname').val();
+            var lname = $('#lname').val()
+            var email = $('#email').val();
+            var mno = $('#mno').val();
+            var male = $('#male').val();
+            var female = $('#female').val();
+            var bdate = $('#dob').val();
+            var Add = $('#add').val();
+            var city = $('#city1').val();
+            var pin = $('#pin1').val();
+            var state = $('#State').val();
+            var quly = $('#qualify').val();
+            var passs = $('#pass').val();
+
+            // Validate name
+            if (fname === '') {
+                alert('Please enter your first name.');
+                fname.focus();
+                return false;
+            }
+            // last name 
+            if (lname === '') {
+                alert('Please enter your lastname.');
+                lname.focus();
+                return false;
+            }
+
+            // Validate email
+            if (email === '') {
+                alert('Please enter your email.');
+                email.focus();
+                return false;
+            }
+
+            // Check email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (mno === '') {
+                alert('Please enter your mobile number');
+                mno.focus()
+                return false;
+            }
+            // radio alert
+            if (!$('#male').prop('checked') && !$('#female').prop('checked')) {
+                alert('Please select your Gender');
+                return false;
+            }
+            // dob
+            if (bdate === '') {
+                alert('Please Fill Your Birthdate');
+                bdate.focus();
+                return false;
+            }
+            // address
+            if (Add === '') {
+                alert('Please Enter Your Address..');
+                Add.focus();
+                return false;
+            }
+            // city
+            if (city === '') {
+                alert('Please Enter Your city Name..');
+                city.focus();
+                return false;
+            }
+            // pin
+            if (pin === '') {
+                alert('Please Enter Your Pincod..');
+                pin.focus();
+                return false;
+            }
+            // state
+            if (state === '') {
+                alert('Please Enter State Name..');
+                state.focus();
+                return false;
+            }
+            // Qualification
+            if (quly === '') {
+                alert('Please Select Your Qualification');
+                quly.focus();
+
+                return false;
+            }
+
+            // Specialization
+            var specializationChecked = $('.inputclass input[type="checkbox"]:checked').length > 0;
+            if (!specializationChecked) {
+                alert('Please Select at least one Specialization..');
+                specializationChecked.focus();
+                return false;
+            }
+            // password
+            if (passs === '') {
+                alert('Please Enter password..');
+                passs.focus();
+                return false;
+            }
+
+        
+            // If all validations pass, submit the form 
+            alert(' Your Form Registred  Successfully !!!');    
+        }
+    </script>
+</body>
+
+</html>

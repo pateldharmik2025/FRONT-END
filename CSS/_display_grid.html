@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            /* grid defaultly apply in row */
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .mydiv {
+            height: 100px;
+            width: 100px;
+        }
+
+        .div1,
+        .div3,
+        .div5,
+        .div7,
+        .div9 {
+            background-color: chocolate;
+        }
+
+        .div2,
+        .div4,
+        .div6,
+        .div8,
+        .div10 {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1 mydiv">Div1</div>
+        <div class="div2 mydiv">Div2</div>
+        <div class="div3 mydiv">Div3</div>
+        <div class="div4 mydiv">Div4</div>
+        <div class="div5 mydiv">Div5</div>
+        <div class="div6 mydiv">Div6</div>
+        <div class="div7 mydiv">Div7</div>
+        <div class="div8 mydiv">Div8</div>
+        <div class="div9 mydiv">Div9</div>
+        <div class="div10 mydiv">Div10</div>
+    </div>
+</body>
+
+</html>

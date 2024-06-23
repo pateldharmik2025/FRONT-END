@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        .menu {
+            background-color: blueviolet;
+        }
+
+        /* when we use display inline => set content in one line but not count height & width on the element */
+        /* inline used in child class */
+        .menu ul li {
+            display: inline;
+            padding: 20px;
+            background-color: aqua;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>

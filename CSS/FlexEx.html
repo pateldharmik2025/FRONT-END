@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.FlexEx {
+    background-color: lavender;
+}
+
+.FlexEx .flex-m {
+    margin: 0px 80px;
+}
+
+.FlexEx .flex-p {
+    padding: 50px 0px;
+}
+
+.FlexEx .flexBox {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.FlexEx .flexBox .fleximg {
+    flex: 1;
+}
+
+/* responsive image css */
+.FlexEx .flexBox .fleximg img {
+    height: auto;
+    max-width: 100%;
+}
+
+.FlexEx .flexBox .flexContent {
+    flex: 1;
+}
+
+.FlexEx .flexBox .flexContent h1 {
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+.FlexEx .flexBox .flexContent p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+.FlexEx .flexBox .flexContent button {
+    height: 40px;
+    width: 150px;
+    background-color: #130c4d;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 17px;
+}
+
+/* ==================================  */
+@media (max-width:576px) {
+    .FlexEx .flex-m {
+        margin: 0px 20px;
+    }
+
+    .FlexEx .flexBox {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:576px) {
+    .FlexEx .flex-m {
+        margin: 0px 35px;
+    }
+
+    .FlexEx .flexBox {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    .FlexEx .flex-m {
+        margin: 0px 50px;
+    }
+
+    /* direction inherit from min width 576px */
+}
+
+@media (min-width:992px) {
+    .FlexEx .flex-m {
+        margin: 0px 65px;
+    }
+
+    .FlexEx .flexBox {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .FlexEx .flex-m {
+        margin: 0px 80px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="FlexEx">
+        <div class="flex-m">
+            <div class="flex-p">
+                <div class="flexBox">
+                    <div class="fleximg">
+                        <img src="images/img3.jpeg" alt="">
+                    </div>
+                    <div class="flexContent">
+                        <h1>About Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias enim fugit accusantium libero
+                            dignissimos! Ratione rerum voluptate, corrupti harum eligendi dolore veritatis nihil
+                            nesciunt aperiam? Quaerat at aliquam asperiores fugiat!</p>
+                            <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

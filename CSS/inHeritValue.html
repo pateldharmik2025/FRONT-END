@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Topdiv {
+            height: auto;
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background-color: chocolate;
+            border: 2px solid black;
+        }
+
+        .Topdiv .innerDiv {
+            height: inherit;
+            width: inherit;
+            padding: inherit;
+            margin: inherit;
+            border: inherit;
+            background-color: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a .active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Topdiv">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe excepturi natus inventore minima
+        praesentium facere doloribus suscipit dolorem soluta animi qui expedita corrupti non fugit, nisi, voluptate ea!
+        Accusamus!
+        <div class="innerDiv">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, excepturi molestias. Amet voluptas fuga
+            nemo dolore quam iusto voluptates ratione! Cum laborum quo deleniti delectus rem aspernatur sequi dolore
+            maxime.
+        </div>
+    </div>
+    <a href="" class="link1 active">click</a>
+    <a href="" class="link2">click</a>
+</body>
+
+</html>

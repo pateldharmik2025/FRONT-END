@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .imageOver {
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overEff {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.598);
+            color: white;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: 1s all ease-in-out;
+            scale: 0;
+        }
+
+        .delayEff {
+            transition: 1s all ease-in-out;
+            transition-delay: 2s;
+            transform: rotateX(90deg);
+        }
+
+        .imageOver:hover .overEff {
+            scale: 1;
+            rotate: 360deg;
+            border-radius: 0;
+        }
+
+        .imageOver:hover .delayEff {
+            transform: rotateX(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageOver">
+        <img src="images/img2.jpeg" alt="">
+        <div class="overEff">
+            <div class="delayEff">
+                <h2>Image 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

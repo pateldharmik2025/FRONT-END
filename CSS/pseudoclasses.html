@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            content: url(images/img1.jpeg);
+        }
+        h1::before{
+            content: url(images/img1.jpeg);
+        }
+        .div1{
+            height: 20px;
+            width: 100px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+
+        }
+        .div1::first-letter{
+            font-size: 30px;
+        }
+        input::placeholder{
+            height: 25px;
+            font-size: 15px;
+            color: aqua;
+        }
+        li::marker{
+            color: red;
+        }
+        .div1::selection{
+            background-color: black;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <div class="div1">hiii</div>
+    <input type="text" name="" id="" placeholder="Enter name">
+    <ul>
+        <li>123</li>
+        <li>345</li>
+    </ul>
+</body>
+</html>

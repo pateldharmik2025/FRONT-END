@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .imageOver{
+            height: 300px;
+            width: 300px;
+            position: relative;
+        }
+        .overEff{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+        }
+        .imageOver:hover .overEff{
+            height: 50%;
+        }
+        .imageOver1{
+            height: 300px;
+            width: 300px;
+            position: relative;
+        }
+        .overEff1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            bottom: 0;
+            background-color: black;
+            color: white;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            width: 0px;
+            height: 100%;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+        }
+        .imageOve1r:hover .overEff1{
+           width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imageOver">
+        <img src="images/img1.jpeg" alt="">
+        <div class="overEff">
+            <h2>Image 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="imageOver1">
+        <img src="images/img2.jpeg" alt="">
+        <div class="overEff1">
+            <h2>Image 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>

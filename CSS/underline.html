@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            gap: 30px;
+        } 
+        a{
+            color: blue;
+            text-decoration: none;
+            font-size: 50px;
+        }
+        .link1::after{
+            content: '';
+            height: 5px;
+            width: 230px;
+            background-color: aqua;
+            display: block;
+            transform: scale(0);
+            transition: 1s ease all;
+        }
+        .link1:hover::after{
+            transform: scale(1);
+        }
+        .link2::after{
+            content: '';
+            height: 5px;
+            width: 230px;
+            background-color: aqua;
+            display: block;
+            transform: scaleX(0);
+            transition: 1s ease all;
+        }
+        .link2:hover::after{
+            transform: scaleX(1);
+        }
+        .link3::after{
+            content: '';
+            height: 5px;
+            width: 230px;
+            background-color: aqua;
+            display: block;
+            transform: scaleY(0);
+            transition: 1s ease all;
+        }
+        .link3:hover::after{
+            transform: scaleY(1);
+        }
+        .link4::after{
+            content: '';
+            height: 5px;
+            width: 230px;
+            background-color: aqua;
+            display: block;
+            transform: scaleX(0);
+            transform-origin: 0% 100%;
+        }
+        .link4:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <a href="#" class="link1">Click Here</a>
+        </div>
+        <div class="sub">
+            <a href="#" class="link2">Click Here</a>
+        </div>
+        <div class="sub3">
+            <a href="#" class="link3">Click Here</a>
+        </div>
+        <div class="sub">
+            <a href="#" class="link4">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>

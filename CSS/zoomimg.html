@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgzoom{
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            transition: 0,5s ease-in-out all;
+        }
+        .imgzoom:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="imgzoom">
+    <img src="images/img2.jpeg" alt="">
+</div>
+</body>
+</html>

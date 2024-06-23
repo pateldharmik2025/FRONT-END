@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .FlexEx{
+            display: flex;
+
+        }
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5{
+            height: 100px;
+            width: 100px;
+        }
+        .div1,
+        .div3,
+        .div5{
+            background-color: aqua;
+        }
+        .div2,
+        .div4{
+            background-color: chartreuse;
+        }
+        .div1,
+        .div4{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+        }
+        .div2,
+        .div5{
+            flex: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="Flex">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</div>
+</body>
+</html>

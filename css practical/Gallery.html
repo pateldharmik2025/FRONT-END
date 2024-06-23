@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .images{
+            height: 700px;
+            width: 100%;
+            
+          padding: 50px;
+           
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-left: 50px;
+            /* gap: 20px; */
+
+        }
+        img{
+            height: 270px;
+            width: 270px;
+            border: 5px solid green;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px green;
+            /* gap: 10px; */
+            
+            
+        }
+        .div1{
+            transition: 1s all ease-out;
+        }
+        .div1:hover{
+            transform: rotateX(360deg);
+        }
+        .div2{
+            transition: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .div2:hover{
+            transform: scale(0.5);
+
+        }
+        .div3{
+            transition: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .div3:hover{
+            transform: skew(50deg,45deg);
+
+        }
+        .div4{
+            transition: 1s all ease-in-out;
+        }
+        .div4:hover{
+            transform: translateY(100px);
+        }
+        .div5{
+            transition: 1s all ease-in-out;
+        }
+        .div5:hover{
+            transform: rotateX(90deg) rotateY(180deg) rotateZ(360deg);
+        }
+        .div6{
+            transition: 1s all ease-in-out;
+        }
+        .div6:hover{
+            transform: rotateX(90deg) ;
+        }
+        .div7{
+            transition: 1s all ease-in-out;
+        }
+        .div7:hover{
+            transform: rotateY(180deg) ;
+        }
+        .div8{
+            transition: 1s all ease-in;
+        }
+        .div8:hover{
+            transform: skewY(50deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="images">
+       <div class="div1"><img src="images/image4.jpeg" alt=""></div>
+       <div class="div2"><img src="images/img1.jpeg" alt=""></div>
+       <div class="div3"><img src="images/img2.jpeg" alt=""></div>
+       <div class="div4"><img src="images/img3.jpeg" alt=""></div>
+       <div class="div5"><img src="images/img5.jpeg" alt=""></div>
+       <div class="div6"><img src="images/img7.jpeg" alt=""></div>
+       <div class="div7"><img src="images/img8.jpeg" alt=""></div>
+       <div class="div8"><img src="images/img9.jpeg" alt=""></div>
+    </div>
+</body>
+</html>

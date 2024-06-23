@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .list{
+            background-color: aqua;
+        }
+        .list .mainMenu{
+            display: flex;
+            gap: 35px;
+        }
+        .list .mainMenu li{
+            padding: 10px;
+        }
+        .list .mainMenu li a{
+            color: black;
+            font-size: 15px;
+        }
+        .list .showMenu{
+            position: relative;
+        }
+        .list .innerMenu{
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: px;
+            background-color: aquamarine;
+            width: 100px;
+        }
+        .list .showMenu:hover .innerMenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul class="mainMenu">
+            <li><a href="">Home</a></li>
+            <li class="showMenu">
+                <a href="">Service</a>
+                <ul class="innerMenu">
+                    <li><a href="">Service1</a></li>
+                    <li><a href="">Service2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About As</a></li>
+            <li><a href="">Contact As</a></li>
+
+
+        </ul>
+    </div>
+</body>
+</html>

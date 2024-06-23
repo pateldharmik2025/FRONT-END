@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        
+        div {
+            height: 600px;
+            width: 100%;
+        }
+              .div2 {
+            
+            
+                background: radial-gradient(rgb(182, 72, 90) 400px, pink);
+            
+        }
+        
+       .form{
+        position: relative;
+        
+       } 
+       .form{
+        position: absolute;
+        top: 160px;
+            height: 300px;
+            width: 300px;
+            border: 3px solid black;
+            margin-left: 38%;
+            border-radius: 10px;
+           
+       }
+        h1{
+            
+            text-align: center;
+            margin-top: 50px;
+            
+           
+        }
+        h1::after{
+            content: "";
+            height: 3px;
+            width: 50px;
+            background-color: blue;
+            display: inline-block;
+            margin: 8px 6px;
+            
+
+
+        }
+        h1::before{
+            content: "";
+            height: 3px;
+            width: 50px;
+            background-color: blue;
+            display: inline-block;
+            margin: 8px 6px;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+            margin-top: 10px;
+            
+
+        }
+        button{
+            background-color: blue;
+            height: 30px;
+            width: 80px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="div2"></div>
+    
+       <div class="form">
+         <h1>Login</h1>
+        <div class="text">
+   
+        <input type="text" name="" id="" placeholder="Enter Email" >
+    <br><br>
+    <input type="text" name="" id="" placeholder="Enter Password">
+    <br><br>
+    <button type="button">Login
+        <i class="fa-sharp fa-solid fa-forward"></i>
+    </button>
+    </div>
+</div>
+
+</body>
+
+</html>

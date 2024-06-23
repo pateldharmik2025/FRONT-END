@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: rgb(113, 176, 19);
+    }
+ .main{
+     
+     width: 55%;
+     border: 2px solid none;
+     color: black;
+     margin: auto;
+     padding: 20px;
+     background-color: white;
+     box-shadow:1px 1px 10px white ;
+     }
+     h1{
+        text-align: center;
+     }
+
+ .row{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+
+ }
+ .row .col1{
+    flex:.50;
+    justify-content: end;
+    display:flex;
+    
+ }
+ .row .col2{
+    flex: 2;
+    margin-left: 50px;
+ }
+ .row .col2 input{
+   height: 20px;
+   width: 70%;
+   padding:5px;
+   border: 1px solid;
+   border-radius: 5px;
+ }
+ input:focus{
+    outline: none;
+ }
+ select{
+  height: 30px;
+  width: 75%;   
+ }
+
+ .row .col3{
+    flex: .50;
+ }
+ .row .col4{
+    flex:2 ;
+    margin-left: 50px;
+ }
+ .row .col0{
+    margin-left: 9px;
+    font-size: 18px;
+    width: 123px;
+ }
+ 
+.box{
+    margin-right:150px;
+}
+
+ 
+
+ button{
+    height: 40px;
+    width: 300px;
+    background-color: blue;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+ }
+
+</style>
+</head>
+<body>
+    <section class="main" >
+        <form action="#" >
+            <div class="head">
+                <h1> Registration For Job</h1>
+            </div>
+        
+            <div class="form">
+                <!-- 1st box -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">First name </label>        
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="" id="" placeholder="Enter First Name">
+                    </div>
+                </div>
+                <!-- 2nd box-->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Middle Name</label>             
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="" id="" placeholder="Enter Middle Name">
+                    </div>
+                </div>
+                <!-- 3rd row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Last Name</label>             
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="" id="" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <!-- 4rth Row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Adress</label>             
+                    </div>
+                    <div class="col2">
+                       <textarea name="" id="" cols="36" rows="5"></textarea>
+                    </div>
+                </div>
+                <!-- 5th row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for=""> Date Of Birth </label>             
+                    </div>
+                    <div class="col2">
+                        <input type="date" name="" id="" >
+                    </div>
+                </div>
+                <!-- 6th row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Gender</label>             
+                    </div>
+                    <div class="col4">
+                        <input type="radio" name="male" id="">Male
+                        <input type="radio" name="male" id="">Female
+                    </div>
+                </div>
+                <!-- 7th row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Experiance</label>             
+                    </div>
+                    <div class="col2">
+                        <select name="" id="">
+                            <option value="">---Select---</option>
+                            <option value=""> 1 year </option>
+                            <option value=""> 2 year  </osption>
+                           </select>
+                    </div>
+                </div>
+                <!-- 8th row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Mobile No</label>             
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="mobile no." id="" placeholder="Enter Mobile No">
+                    </div>
+                </div>
+                <!-- 9th row -->
+                <div class="row">
+                    <div class="col1">
+                        <label for="">Email id</label>             
+                    </div>
+                    <div class="col2">
+                        <input type="text" name="" id="" placeholder="Enter Email">
+                    </div>
+                </div>
+                <!-- 10th row -->
+                <div class="row">
+                    <div class="col0">
+                        <label for="">Create Password</label>             
+                    </div>
+                    <div class="col2">
+                        <input type="password" name="" id="" placeholder="Enter Password">
+                    </div>
+                </div>
+                <!-- 11th row  -->
+                <div class="row">
+                    <div class="col1">
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="" id="">         
+                        <label for="" class="box">Show Password</label>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button>Register</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
